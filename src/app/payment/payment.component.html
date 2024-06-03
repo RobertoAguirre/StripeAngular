@@ -1,0 +1,9 @@
+<form [formGroup]="stripeTest" (ngSubmit)="createToken()">
+    <label>
+      Name
+      <input type="text" formControlName="name" placeholder="Enter your name">
+    </label>
+    <div #cardElement id="cardElement"></div>
+    <button type="submit">Pay</button>
+  </form>
+  
